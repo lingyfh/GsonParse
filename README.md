@@ -23,3 +23,24 @@ GsonParse is base on Gson that is compatible with some regular data conversion.
 * string deserialization
   * boolean to string
     * Boolean.toString(in.nextBoolean());
+
+
+### How to
+*Step 1.* Add the JitPack repository to your build file
+<br>
+Add it in your root build.gradle at the end of repositories:
+``` gradle 
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+
+*Step 2.* Add the dependency
+
+```gradle
+	dependencies {
+	        implementation 'com.github.lingyfh:GsonParse:0.1'
+	}
+```
